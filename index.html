@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <p class="info">RAGUL N, 2021503542</p>
+        <div id="gameBoard">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <p id="message"></p>
+        <button id="restartButton">Restart Game</button>
+    </div>
+
+    <!-- Winning Celebration Popup -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2 id="winMessage"></h2>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <!-- Falling Emojis Container -->
+    <div id="fallingEmojis"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
